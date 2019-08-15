@@ -6,6 +6,7 @@ function main() {
     fs = require("fs").writeFileSync("output.txt", getOutput(operation, tableSize), "utf8")
 }
 
+// метод сделан без оптимизации можно вычислять только половину таблицы а вторую зеркально переписать
 function getResultArray(operation, tableSize) {
     let resultArr = [
         []
@@ -39,6 +40,7 @@ function getOutput(operation, tableSize) {
             (resultArr[j][i].toString().length > maxColumnLength) ?
             maxColumnLength = resultArr[j][i].toString().length : maxColumnLength;
         }
+        // ниже возможно можно сделать при помощи arr.map 
         for (let j = 0; j < arrLength; j++) {
             let spaces = '';
             let k = resultArr[j][i].toString().length;
@@ -48,6 +50,7 @@ function getOutput(operation, tableSize) {
             resultArr[j][i] += spaces + '| ';
         }
     }
+    // сделать при помощи reduce
     for (let i = 0; i < arrLength; i++) {
         resultOutput += resultArr[i].join('') + '\n';
         if (i === 0) {
