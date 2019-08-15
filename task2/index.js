@@ -1,7 +1,11 @@
 // можно решить в одну строчку вернув (number.toLocaleString('en-US'));
+// происходит проблема с памятью бигинт не до конца спасает, если вводить число в инпут и запускать то работает исправно 
+// и если передавать число с 'n' на конце, то всё пройдёт нормально, возможно нужно написать какой-то хитрый конструктор с 
+// умным геттером
 function main() {
     const input = require("fs").readFileSync("input.txt", "utf8");
     fs = require("fs").writeFileSync("output.txt", addСommasToNumber(BigInt(input)), "utf8")
+    console.log(typeof(input));
 }
 
 function addСommasToNumber(number) {

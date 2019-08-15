@@ -1,10 +1,11 @@
 const index = require('./index');
 let assert = require('assert');
+//const input = require("fs").readFileSync("input.txt", "utf8");
 
 describe('addСommasToNumber', function () {
     it('метод должен вернуть отфарматированное число с запятыми', function () {
         assert.equal(index.addСommasToNumber(30000000), '30,000,000');
-        assert.equal(index.addСommasToNumber(3474902022344556634), '3,474,902,022,344,556,634');
+        assert.equal(index.addСommasToNumber(3474902022344556634n), '3,474,902,022,344,556,634');
         assert.equal(index.addСommasToNumber(300), '300');
         assert.equal(index.addСommasToNumber(30), '30');
         assert.equal(index.addСommasToNumber(3), '3');
