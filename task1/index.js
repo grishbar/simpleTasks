@@ -16,14 +16,16 @@ function getResultArray(operation, tableSize) {
         resultArr[i + 1] = []; // добавляем масиив в наш двумерный массив
         resultArr[i + 1][0] = i;
     }
-    for (let i = 1; i < tableSize + 1; i++) {
-        for (let j = 1; j < tableSize + 1; j++) {
+    for (let i = 1; i < tableSize + 2; i++) {
+        for (let j = 1; j < tableSize + 2; j++) {
             resultArr[j][i] = (eval(resultArr[j][0] + operation + resultArr[0][i]));
             ((resultArr[j][i] ^ 0) !== resultArr[j][i] && resultArr[j][i].toString().length !== 3) ?
-            resultArr[j][i] = resultArr[j][i].toFixed(2): resultArr[j][i] = resultArr[j][i];
+            resultArr[j][i] = resultArr[j][i].toFixed(2): resultArr[j][i];
         }
     }
+    console.log(resultArr);
     return resultArr;
+    
 }
 
 function getOutput(operation, tableSize) {
