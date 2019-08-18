@@ -1,0 +1,98 @@
+.control {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: #3fb8d9;
+}
+
+.arrow-container {
+    position: absolute;
+    left: 90px;
+    bottom: -10px;
+    animation: rotate 2s infinite linear;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.arrow {
+    background: #000;
+    height: 100px;
+    left: 7.5px;
+    position: absolute;
+    top: 0px;
+    transform-origin: 50% 100%;
+    width: 5px;
+    border-radius: 5px;
+}
+
+.circle {
+    position: absolute;
+    left: 75px;
+    bottom: -25px;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* #container {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: #3fb8d9;
+    z-index: 0;
+}
+
+.control {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -20px;
+    z-index: 0;
+
+} 
+
+.arrow-container {
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 2px 1px 3px #777;
+    -moz-box-shadow: 2px 1px 3px #777;
+    -webkit-box-shadow: 2px 1px 3px #777;
+    animation: arrow-rotate  2s infinite linear;
+    z-index: 2;
+}
+
+@keyframes arrow-rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+  
+.arrow {
+    background: #000;
+    height: 20%;
+    left: 48.75%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+    z-index: 1;
+  }
+  */
