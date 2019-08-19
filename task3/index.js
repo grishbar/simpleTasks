@@ -6,7 +6,11 @@ function moveArrow(inputDegree) {
 function changeDegrees() {
     let degreeNumber = document.getElementById("degree-number");
     let inputDegree = document.getElementById("set-degree").value;
-    degreeNumber.innerHTML = inputDegree;
+    if (inputDegree.toString().length < 1) {
+        degreeNumber.innerHTML = 0;
+    } else {
+        degreeNumber.innerHTML = inputDegree;
+    }
     moveArrow(getRealDegree(inputDegree));
 }
 
