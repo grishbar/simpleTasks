@@ -21,7 +21,7 @@
 }
 
 .arrow {
-    background: #000;
+    background: rgb(255, 255, 255);
     height: 100px;
     left: 7.5px;
     position: absolute;
@@ -53,8 +53,3 @@
     height: 50px;
 }
 
-@keyframes rotate {
-    100% {
-        transform: rotateZ(360deg);
-    }
-}
