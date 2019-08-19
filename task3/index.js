@@ -9,7 +9,8 @@ function changeDegrees() {
     if (inputDegree.toString().length < 1) {
         degreeNumber.innerHTML = 0;
     } else {
-        degreeNumber.innerHTML = inputDegree;
+         (inputDegree > 500) ? degreeNumber.innerHTML = 500 : 
+         degreeNumber.innerHTML = inputDegree;
     }
     moveArrow(getRealDegree(inputDegree));
 }
