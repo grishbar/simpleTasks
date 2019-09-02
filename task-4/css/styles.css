@@ -1,33 +1,34 @@
-*{
+* {
     box-sizing: border-box;
-  }
-.header {
-
-    color: #fefefe;
-    font-family: "PT Sans";
-    font-size: 48px;
-
 }
 
+.header {
+    background-image: url(../images/barraques.cat_4k-pattern-wallpaper_851511.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 268px;
+    position: relative;
+    min-width: 456px;
+}
 
+.header_title {
+    font-family: "PT Sans";
+    font-size: 48px;
+    position: absolute;
+    top: 27.5%;
+    left: 3.2%;
+    color: #fefefe;
+}
 
 .top-nav_menu {
     position: absolute;
     list-style: none;
     display: -webkit-box;
-
     margin-left: 0px;
     padding-left: 0px;
     left: 1.82%;
     bottom: -9%;
-
-}
-
-.header-text {
-    position: absolute;
-    top: 27.5%;
-    left: 3.2%;
-    color: #fefefe;
 }
 
 .nav-link {
@@ -48,32 +49,41 @@
     transition: all 0.2s;
 }
 
+.nav-link:hover:after {
+    transform: translateY(0px) scale(1.1);
+    text-decoration: none;
+}
 
-
-
-
-.content-container {
+.perfomance {
     min-width: 430px;
     min-height: 120px;
     position: relative;
     width: 94%;
-    height: 57%;
     box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.09);
     border: 1px solid #e0e0e0;
-    background-color: #f3f3f3;
+    background-color: rgb(243, 243, 243);
     left: 3%;
-    margin-top: 4%;
-    margin-bottom: 5.9%;
+    margin-top: 3%;
     right: 3%;
-    margin: 0 auto;
-  padding: 0 15px; 
 }
 
+.perfomance__inner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+.perfomance-item {
+    margin: 10% 3.1% 19%;
+    max-width: 122px;
 
-.nav-link:hover:after {
-    transform: translateY(0px) scale(1.1);
-    text-decoration: none;
+}
+
+.perfomance__title {
+    text-align: center;
+    color: #787878;
+    font-family: "PT Sans";
+    font-size: 14px;
 }
 
 .footer {
@@ -83,102 +93,4 @@
     font-size: 14px;
     left: 3%;
     bottom: -24px;
-   
-
 }
-
-/*
-.header-background {
-    position: relative;
-    max-width: 100%;
-    height: 268px;
-    display: block;
-}
-*/
-.parameters {
-
-    margin: 28% 3.1% 47.65%;
-    display: flex;
-  justify-content: center;
-  
-    
-}
-
-
-.parameter {
-    max-width: 122px;
-    text-align: center;
-    justify-content: center;
-
-    position: absolute;
-}
-
-/*
-.header-background {
-max-width: 100%;
-position: relative;
-max-height: 268px;
-}
-*/
-
-.header-background{
-    background-image: url(../images/barraques.cat_4k-pattern-wallpaper_851511.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 268px;
-    position: relative;
-    min-width: 456px;
-  }
-
-.parameter_title {
-    color: #787878;
-font-family: "PT Sans";
-}
-
-
-.container{
-    margin: 0 auto;
-    padding: 0; 
-  }
-
-.perfomance{
-    min-width: 430px;
-    min-height: 120px;
-    position: relative;
-    width: 94%;
-
-    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.09);
-    border: 1px solid #e0e0e0;
-    background-color: rgb(243,243,243);
-    left: 3%;
-    margin-top: 3%;
-    right: 3%;
-  
-  }
-  .perfomance__inner{
-    
-    display: flex;
-  justify-content: center;
-
-    text-align: center;
-    
-  }
-  
-  .perfomance-item{
-    margin: 10% 3.1% 19%;
-    max-width: 122px;
-  
-  }
-  .perfomance__title{
-    text-align: center;
-
-    
-    color: #787878;
-font-family: "PT Sans";
-font-size: 14px;
-  }
- 
-  .perfomance__image{
-   
-  }
