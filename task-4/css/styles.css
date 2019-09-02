@@ -53,7 +53,9 @@
 
 
 .content-container {
-    position: absolute;
+    min-width: 430px;
+    min-height: 120px;
+    position: relative;
     width: 94%;
     height: 57%;
     box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.09);
@@ -63,7 +65,11 @@
     margin-top: 4%;
     margin-bottom: 5.9%;
     right: 3%;
+    margin: 0 auto;
+  padding: 0 15px; 
 }
+
+
 
 .nav-link:hover:after {
     transform: translateY(0px) scale(1.1);
@@ -71,11 +77,13 @@
 }
 
 .footer {
-    position: absolute;
+    position: relative;
+    display: inline-block;
     font-family: "PT Sans";
     font-size: 14px;
     left: 3%;
-    bottom: -3%;
+    bottom: -24px;
+   
 
 }
 
@@ -89,10 +97,10 @@
 */
 .parameters {
 
-    
+    margin: 28% 3.1% 47.65%;
     display: flex;
   justify-content: center;
-  padding: 125px 64px;
+  
     
 }
 
@@ -100,21 +108,77 @@
 .parameter {
     max-width: 122px;
     text-align: center;
-    
-  margin: 0px 6.62%;
-    position: relative;
+    justify-content: center;
+
+    position: absolute;
 }
 
-
+/*
 .header-background {
 max-width: 100%;
 position: relative;
 max-height: 268px;
 }
+*/
 
-
+.header-background{
+    background-image: url(../images/barraques.cat_4k-pattern-wallpaper_851511.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 268px;
+    position: relative;
+    min-width: 456px;
+  }
 
 .parameter_title {
     color: #787878;
 font-family: "PT Sans";
 }
+
+
+.container{
+    margin: 0 auto;
+    padding: 0; 
+  }
+
+.perfomance{
+    min-width: 430px;
+    min-height: 120px;
+    position: relative;
+    width: 94%;
+
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.09);
+    border: 1px solid #e0e0e0;
+    background-color: #f3f3f3;
+    left: 3%;
+    margin-top: 3%;
+    right: 3%;
+  
+  }
+  .perfomance__inner{
+    
+    display: flex;
+  justify-content: center;
+
+    text-align: center;
+    
+  }
+  
+  .perfomance-item{
+    margin: 12.3% 3.1% 24%;
+    max-width: 122px;
+  
+  }
+  .perfomance__title{
+    text-align: center;
+
+    
+    color: #787878;
+font-family: "PT Sans";
+font-size: 14px;
+  }
+ 
+  .perfomance__image{
+   
+  }
